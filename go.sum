@@ -1,4 +1,12 @@
+github.com/caarlos0/env/v11 v11.2.2 h1:95fApNrUyueipoZN/EhA8mMxiNxrBwDa+oAZrMWl3Kg=
+github.com/caarlos0/env/v11 v11.2.2/go.mod h1:JBfcdeQiBoI3Zh1QRAWfe+tpiNTmDtcCj/hHHHMx0vc=
+github.com/crazybolillo/eryth v0.6.1-0.20241006061752-183bbe871c9a h1:rWCAQLfjCXy9qb2LCukz3+35pd0tdXJEauHMwupop9I=
+github.com/crazybolillo/eryth v0.6.1-0.20241006061752-183bbe871c9a/go.mod h1:HDmxE+XBjTNOjZ7fU9Z6IubXeTsLmtDIAKVT+PboT+M=
 github.com/glauth/ldap v0.0.0-20240419171521-1f14f5c1b4ad h1:2ERGXiofR9ISXg4evamCngs2EeuMhVJRuDwWGa6bS6s=
 github.com/glauth/ldap v0.0.0-20240419171521-1f14f5c1b4ad/go.mod h1:5ueZMujvJ5nuYPyBj6uQTPV4R1YshboRa/osaP4Emfs=
 github.com/go-asn1-ber/asn1-ber v1.5.5 h1:MNHlNMBDgEKD4TcKr36vQN68BA00aDfjIt3/bD50WnA=
 github.com/go-asn1-ber/asn1-ber v1.5.5/go.mod h1:hEBeB/ic+5LoWskz+yKT7vGhhPYkProFKoKdwZRWMe0=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
+gopkg.in/yaml.v3 v3.0.1/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
