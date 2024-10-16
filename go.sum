@@ -1,7 +1,7 @@
 github.com/caarlos0/env/v11 v11.2.2 h1:95fApNrUyueipoZN/EhA8mMxiNxrBwDa+oAZrMWl3Kg=
 github.com/caarlos0/env/v11 v11.2.2/go.mod h1:JBfcdeQiBoI3Zh1QRAWfe+tpiNTmDtcCj/hHHHMx0vc=
-github.com/crazybolillo/eryth v0.6.1-0.20241006061752-183bbe871c9a h1:rWCAQLfjCXy9qb2LCukz3+35pd0tdXJEauHMwupop9I=
-github.com/crazybolillo/eryth v0.6.1-0.20241006061752-183bbe871c9a/go.mod h1:HDmxE+XBjTNOjZ7fU9Z6IubXeTsLmtDIAKVT+PboT+M=
+github.com/crazybolillo/eryth v0.9.0 h1:AjlnQX9D6NEyKLJ7swTq2y2E+R6LunlRF2Gl8IaI8vk=
+github.com/crazybolillo/eryth v0.9.0/go.mod h1:nZNbmnKGzv2IgQHuKUrKp5h+NMvSZOcw4x+V6CM/0HM=
 github.com/glauth/ldap v0.0.0-20240419171521-1f14f5c1b4ad h1:2ERGXiofR9ISXg4evamCngs2EeuMhVJRuDwWGa6bS6s=
 github.com/glauth/ldap v0.0.0-20240419171521-1f14f5c1b4ad/go.mod h1:5ueZMujvJ5nuYPyBj6uQTPV4R1YshboRa/osaP4Emfs=
 github.com/go-asn1-ber/asn1-ber v1.5.5 h1:MNHlNMBDgEKD4TcKr36vQN68BA00aDfjIt3/bD50WnA=
