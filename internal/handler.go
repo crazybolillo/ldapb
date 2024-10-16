@@ -11,6 +11,7 @@ import (
 	"log/slog"
 	"net"
 	"net/http"
+	"net/url"
 )
 
 type Handler struct {
@@ -58,8 +59,7 @@ func (h *Handler) Unbind(bindDN string, conn net.Conn) (ldap.LDAPResultCode, err
 }
 
 func (h *Handler) Search(boundDN string, req ldap.SearchRequest, conn net.Conn) (ldap.ServerSearchResult, error) {
-	slog.Info("Processing Search", "dn", boundDN, "remote", conn.RemoteAddr())
-
+	slog.Info("Processing Search", "dn", boundDN, "filter", req.Filter, "remote", conn.RemoteAddr())
 	// Return LDAP Root DES
 	if boundDN == "" {
 		return ldap.ServerSearchResult{
@@ -87,7 +87,14 @@ func (h *Handler) Search(boundDN string, req ldap.SearchRequest, conn net.Conn) 
 		return ldap.ServerSearchResult{ResultCode: ldap.LDAPResultOperationsError}, nil
 	}
 
-	res, err := http.Get(backend.URL)
+	u, err := url.Parse(backend.URL)
+	if err != nil {
+		slog.Info("Invalid URL for backend", "dn", dn, "reason", err)
+		return ldap.ServerSearchResult{ResultCode: ldap.LDAPResultOperationsError}, nil
+	}
+	u.RawQuery = filterToHttp(req.Filter)
+
+	res, err := http.Get(u.String())
 	if err != nil {
 		slog.Error("Failed to request information from backend", "url", backend.URL, "reason", err)
 		return ldap.ServerSearchResult{ResultCode: ldap.LDAPResultOperationsError}, err
